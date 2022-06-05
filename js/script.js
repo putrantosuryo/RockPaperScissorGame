@@ -1,0 +1,5 @@
+startGame();
+
+function startGame(){
+    
+}
