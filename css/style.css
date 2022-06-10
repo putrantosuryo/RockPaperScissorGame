@@ -1,9 +1,100 @@
+body{
+  margin: 0;
+  background-color: #9C835F;
+}
+
+h2{
+  position: fixed;
+  padding-left: 38px;
+  /* display: inline; */
+}
+
+.logo{
+  width:30px; 
+  top: 28px;
+  position: fixed;
+  /* position: unset; */
+}
+
+#header{
+  padding: 10px;
+  height: 30px;
+}
+
+#content{
+  padding: 10px,0px,30px,30px;
+}
+
+#player{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#computer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.disabled {
+   cursor: not-allowed; 
+}
+
+.playerChoice:hover{
+  cursor: pointer;
+  background-color: grey;
+}
+
+.selected{
+  background-color: grey;
+}
 .container {
+  padding-left: 15cm;
+  padding-right: 15cm;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .reset:hover{
+    cursor: pointer;
+    background-color: grey;
+  }
+
+  .gameResult::before{
     justify-content: center;
     align-content: center;
-    margin-bottom: 20px;
+    content: 'VS';
+    color: red;
+    
   }
+
+  .gameResultPlayer::after{
+    justify-content: center;
+    align-content: center;
+    content: 'PLAYER WIN';
+    color: red;
+    
+  }
+
+  .gameResultComputer::after{
+    justify-content: center;
+    align-content: center;
+    content: 'COMPUTER WIN';
+    color: red;
+    
+  }
+
+  .gameResultDraw::after{
+    justify-content: center;
+    align-content: center;
+    content: 'DRAW';
+    color: red;
+    
+  }
+
 
  
